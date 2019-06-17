@@ -362,3 +362,11 @@ a {
   padding-right: 15px;
   padding-left: 15px;
 }
+.pub {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+}
