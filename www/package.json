@@ -1,7 +1,7 @@
 {
-  "name": "open-social-pool",
+  "name": "open-pool",
   "version": "0.0.0",
-  "description": "Ethereum Social Pool",
+  "description": "Ethash Pool",
   "directories": {
     "doc": "doc",
     "test": "tests"
