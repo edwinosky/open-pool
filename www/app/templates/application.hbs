@@ -62,17 +62,18 @@
             <i class="fa fa-rocket"></i> {{t 'menu.help'}}
           {{/link-to}}
         {{/active-li}}
-        <li>
+       <li>
           <ul class="nav navbar-nav navbar-right">
             <li>
               <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="selectedLanguage">
-                {{selectedLanguage}}
+                Links
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu dropdown-menu-right">
-                {{#each languages as |lang|}}
-                <li><a href="#" {{action 'selectLanguage' lang.value on='click'}}>{{lang.name}}</a></li>
-                {{/each}}
+
+                <li><a href="https://myetherwallet.com" target="_blank">Wallet</a></li>
+                <li><a href="https://ethscan.com" target="_blank">Explorer</a></li>
+
               </ul>
             </li>
           </ul>
