@@ -1,6 +1,6 @@
 {
   "threads": 1,
-  "coin": "etfx",
+  "coin": "xero",
   "name": "main",
   "pplns": 1000,
 
@@ -14,7 +14,7 @@
     },
     {
       "name": "backup",
-      "url": "http://127.0.0.2:4455",
+      "url": "http://127.0.0.1:4456",
       "timeout": "10s"
     }
   ],
@@ -22,14 +22,14 @@
   "redis": {
     "endpoint": "127.0.0.1:6379",
     "poolSize": 10,
-    "database": 3,
+    "database": 4,
     "password": ""
   },
 
   "unlocker": {
     "enabled": true,
-    "poolFee": 5,
-    "poolFeeAddress": "0x3A755f5c4d41eD521d1937483E343FB87D1eEF1d",
+    "poolFee": 3,
+    "poolFeeAddress": "0x9dfc3b370d6b1c3e17cfe4aa21a99841d3b35efd",
     "donate": false,
     "depth": 32,
     "immatureDepth": 20,

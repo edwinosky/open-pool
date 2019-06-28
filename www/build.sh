@@ -1,4 +1,4 @@
 #!/bin/bash
 
 ./node_modules/.bin/ember build --environment production
-rsync -av dist/* /var/www/hora.masterpro.site/open-pool/www
+rsync -av dist/* /home/xerom/open-pool/www

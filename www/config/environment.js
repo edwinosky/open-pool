@@ -15,26 +15,26 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: '//hora.masterpro.site:1011/',
-      PoolName: 'HORA Pool',
+      ApiUrl: 'https://apixero.masterpro.site/',
+      PoolName: 'XERO Pool',
       CompanyName: 'MasterPro.site',
       // HTTP mining endpoint
-      HttpHost: 'http://hora.masterpro.site',
-      HttpPort: 1812,
+      HttpHost: 'https://xero.masterpro.site',
+      HttpPort: 1822,
 
       // Stratum mining endpoint
       StratumHost: 'hora.masterpro.site',
-      StratumPort: 1012,
+      StratumPort: 1812,
 
       // Fee and payout details
       PoolFee: '0.3%',
       PayoutThreshold: '10',
-      PayoutInterval: '3h',
+      PayoutInterval: '2h',
 
       // For network hashrate (change for your favourite fork)
-      BlockTime: 15.0,
-      BlockReward: 5,
-      Unit: 'HORA',
+      BlockTime: 13.0,
+      BlockReward: 26,
+      Unit: 'XERO',
 
     }
   };
@@ -43,7 +43,7 @@ module.exports = function(environment) {
     /* Override ApiUrl just for development, while you are customizing
       frontend markup and css theme on your workstation.
     */
-    ENV.APP.ApiUrl = 'https://hora.masterpro.site:1011'
+    ENV.APP.ApiUrl = 'https://apixero.masterpro.site'
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;

@@ -7,7 +7,11 @@
     <div class="row">
       <div class="col-md-4">
         <strong>{{t "home.min_payout_threshold"}}: {{config.PayoutThreshold}} {{config.Unit}}</strong> / {{t "home.payouts_run" interval=config.PayoutInterval}}<br/>
-        <span class="label label-success">PPLNS</span> {{t "home.payout_scheme_detail"}}
+        <span class="label label-success">PPLNS</span> {{t "home.payout_scheme_detail"}} <br/>
+        <span class="label label-success">USA East</span> New York City <br/>
+        <span class="label label-success">USA West</span> San Francisco <br/>
+        <span class="label label-success">EUROPA</span> Amsterdam, Netherlands <br/>
+        <span class="label label-success">ASIA</span> Singapore <br/>
       </div>
       <div class="col-md-4 stats">
         <div class="stats-box">
@@ -31,6 +35,11 @@
     </div>
   </div>
 </div>
+<!-- 
+<div class="container">
+<h4>Approaching block 270,000 remember that you must restart the miner if you use progminer or use the restart script that is below, do not worry our pool is currently protected from DDOS attacks    </h4>
+</div>
+-->
 <div class="container">
   <div>
   {{high-charts mode=chartMode chartOptions=chartOptions content=chartData}}
@@ -46,54 +55,89 @@
       </span>
     </div>
   </div>
+<br>
+<div>
+    <h4 class="note note-info text-left">
+     If you use windows system, you must use the following script in your .bat file<br>
+     <br>
+     <b>NVIDIA</b><br>
+     <br>
+     :start<br>
+     TIMEOUT 10<br>
+     TT-Miner.exe -A PROGPOWH -luck -P 0xXXXXX.rigName@hora.masterpro.site:3032<br>
+     goto start<br>
+     <br>
+     <b>AMD</b> <br>
+     <br>
+     :start<br>
+     TIMEOUT 10<br>
+     progminer.exe -P stratum1+tcp://YourWallet.YourWorker@hora.masterpro.site:3032<br>
+     goto start<br>
+     <br>
+     <a href="https://discord.gg/X3qEM2y" target="_blank">Discord</a>
+
+    </h4>
+</div>
   <div>
     <hr/>
     <div class="row">
       <div class="col-md-4 col-sm-12">
         <h5 class="note note-info text-center">
-          <span class="label label-success">2b</span>&nbsp;<a href="./#/help" title={{t "home.settings.help"}}><b>{{t "home.settings.title" hashes="< 150"}}</b></a>
+          <span class="label label-success">2b</span>&nbsp;<a href="./#/help" title={{t "home.settings.help"}}><b>{{t "home.settings.title" hashes="< 50"}}</b></a>
           <br>
           {{t "home.settings.difficulty" diff="2"}}
 
           <br><br>
           <b>{{t "home.settings.stratum_mining"}}:</b>
           <br><br>
-          <code>stratum+tcp://{{config.StratumHost}}:1012</code><br>
-	        <code>stratum+tcp://eu.masterpro.site:1012</code><br>
-	        <code>stratum+tcp://asia.masterpro.site:1012</code><br>
-          <code></code>
+          <code>stratum1+tcp://{{config.StratumHost}}:3032</code><br>
+	        <code>stratum1+tcp://eu.masterpro.site:3032</code><br>
+	        <code>stratum1+tcp://asia.masterpro.site:3032</code><br>
+                <code>stratum1+tcp://sf.masterpro.site:3032</code><br>
+           <code></code>
         </h5>
       </div>
       <div class="col-md-4 col-sm-12">
         <h5 class="note note-info text-center">
-          <span class="label label-success">4b</span>&nbsp;<a href="./#/help" title={{t "home.settings.help"}}><b>{{t "home.settings.title" hashes="150 - 800"}}</b></a>
+          <span class="label label-success">4b</span>&nbsp;<a href="./#/help" title={{t "home.settings.help"}}><b>{{t "home.settings.title" hashes="50 - 250"}}</b></a>
           <br>
           {{t "home.settings.difficulty" diff="4"}}
           <br><br>
           <b>{{t "home.settings.stratum_mining"}}:</b>
           <br><br>
-          <code>stratum+tcp://{{config.StratumHost}}:1014</code><br>
-	        <code>stratum+tcp://eu.masterpro.site:1014</code><br>
-	        <code>stratum+tcp://asia.masterpro.site:1014</code><br>
+          <code>stratum1+tcp://{{config.StratumHost}}:3034</code><br>
+	        <code>stratum1+tcp://eu.masterpro.site:3034</code><br>
+	        <code>stratum1+tcp://asia.masterpro.site:3034</code><br>
+                <code>stratum1+tcp://sf.masterpro.site:3034</code><br>
           <code></code>
         </h5>
 
       </div>
       <div class="col-md-4 col-sm-12">
         <h5 class="note note-info text-center">
-          <span class="label label-success">9b</span>&nbsp;<a href="./#/help" title={{t "home.settings.help"}}><b>{{t "home.settings.title" hashes="> 800"}} & NiceHash</b></a>
+          <span class="label label-success">9b</span>&nbsp;<a href="./#/help" title={{t "home.settings.help"}}><b>{{t "home.settings.title" hashes="> 250"}} & Hight Diff</b></a>
           <br>
           {{t "home.settings.difficulty" diff="9"}}
           <br><br>
           <b>{{t "home.settings.stratum_mining"}}:</b>
           <br><br>
-          <code>stratum+tcp://{{config.StratumHost}}:1019</code><br>
-          <code>stratum+tcp://eu.masterpro.site:1019</code><br>
-          <code>stratum+tcp://asia.masterpro.site:1019</code><br>
+          <code>stratum1+tcp://{{config.StratumHost}}:3039</code><br>
+          <code>stratum1+tcp://eu.masterpro.site:3039</code><br>
+          <code>stratum1+tcp://asia.masterpro.site:3039</code><br>
+          <code>stratum1+tcp://sf.masterpro.site:3039</code><br>
           <code></code>
         </h5>
       </div>
     </div>
+    <div>
+    <h3 class="note note-info text-center">
+       TEthashOrigin Pool <a href="http://teo.masterpro.site" target="_blank">TEO Coin</a><br> <br>
+       
+       For more information ask in <a href="https://discord.gg/tMZ4PVV" target="_blank">Discord</a>
+       and <a href="https://t.me/HYDNORAen" target="_blank">Telegram</a>
+    </h3>
+    </div>
+
     <div class="row command_lines">
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
@@ -110,13 +154,13 @@
               <div class="panel-heading" role="tab" id="win_headingOne">
                 <h4 class="panel-title">
                   <a role="button" data-toggle="collapse" data-parent="#windows_settings_windows_tab" href="#win_collapseOne" aria-expanded="true" aria-controls="win_collapseOne">
-                    Claymore
+                      AMD
                   </a>
                 </h4>
               </div>
               <div id="win_collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                      <input type="text" class="form-control" value="EthDcrMiner64.exe -epool stratum+tcp://hora.masterpro.site:1012 -esm 0 -ewal &lt;address&gt; -eworker &lt;worker&gt; -allcoins 1 -allpools 1">
+                      <input type="text" class="form-control" value="progminer.exe -P stratum1+tcp://YourWallet.YourWorker@hora.masterpro.site:3032">
                 </div>
               </div>
             </div>
@@ -124,14 +168,16 @@
               <div class="panel-heading" role="tab" id="win_headingTwo">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#windows_settings_windows_tab" href="#win_collapseTwo" aria-expanded="false" aria-controls="win_collapseTwo">
-                    Ethminer 0.14
+                    NVIDIA
                   </a>
                 </h4>
               </div>
               <div id="win_collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
-                      <input type="text" class="form-control" value="ethminer.exe -U -SP 1 -S hora.masterpro.site:1012 -O &lt;address&gt;.&lt;worker&gt; --farm-recheck 1000 -v 2">
-                </div>
+                 <input type="text" class="form-control" value="TT-Miner.exe -A PROGPOWH -luck -P YOUR_WALLET.YOUR_WORKER@hora.masterpro.site:3032">        
+                 
+
+              </div>
               </div>
             </div>
           </div>
@@ -145,13 +191,13 @@
               <div class="panel-heading" role="tab" id="smos_headingOne">
                 <h4 class="panel-title">
                   <a role="button" data-toggle="collapse" data-parent="#smos_settings_smos_tab" href="#smos_collapseOne" aria-expanded="true" aria-controls="smos_collapseOne">
-                    Claymore
+                    Progminer
                   </a>
                 </h4>
               </div>
               <div id="smos_collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                      <input type="text" class="form-control" value="-wd 1 -r 1 -epool stratum+tcp://hora.masterpro.site:1012 -ewal &lt;address&gt; -eworker $rigName -esm 0 -epsw x -allpools 1 -asm 1 -mode 1">
+                      <input type="text" class="form-control" value="progminer.exe -P stratum1+tcp://YourWallet.YourWorker@hora.masterpro.site:3032">
                 </div>
               </div>
             </div>
@@ -159,13 +205,13 @@
               <div class="panel-heading" role="tab" id="smos_headingTwo">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#smos_settings_smos_tab" href="#smos_collapseTwo" aria-expanded="false" aria-controls="smos_collapseTwo">
-                    Ethminer 0.14
+                    Progminer
                   </a>
                 </h4>
               </div>
               <div id="smos_collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
-                      <input type="text" class="form-control" value="-U -P stratum1+tcp://&lt;address&gt;.$rigName@hora.masterpro.site:1012 --farm-recheck 200 --api-port -3333">
+                      <input type="text" class="form-control" value="progminer.exe -P stratum1+tcp://YourWallet.YourWorker@hora.masterpro.site:3032">
                 </div>
               </div>
             </div>

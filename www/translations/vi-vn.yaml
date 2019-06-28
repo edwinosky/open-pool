@@ -150,11 +150,11 @@ errors:
   message: Thông thường đây chỉ là sự cố và việc khai thác không bị ảnh hưởng.
 
 links:
-  blockExplorerLink: 'http://explorer.roller.today:3000'
-  blockExplorerLink_tx: 'http://explorer.roller.today:3000/tx/'
-  blockExplorerLink_uncle: 'http://explorer.roller.today:3000/block/'
-  blockExplorerLink_block: 'http://explorer.roller.today:3000/block/'
-  blockExplorerLink_address: 'http://explorer.roller.today:3000/addr/'
+  blockExplorerLink: 'http://explorer.hydnora.org'
+  blockExplorerLink_tx: 'http://explorer.hydnora.org/tx/'
+  blockExplorerLink_uncle: 'http://explorer.hydnora.org/block/'
+  blockExplorerLink_block: 'http://explorer.hydnora.org/block/'
+  blockExplorerLink_address: 'http://explorer.hydnora.org/addr/'
 
 footer:
   copyrights: '&copy; Việt hoá bởi <a href="https://cryptopools.info" target="_blank"> Cryptopools.info</a>'

@@ -1,19 +1,19 @@
 {
   "threads": 1,
-  "coin": "etfx",
+  "coin": "xero",
   "name": "main",
   "pplns": 1000,
 
   "api": {
     "enabled": true,
-    "listen": "etfx.masterpro.site:1011",
+    "listen": "127.0.0.1:1011",
     "statsCollectInterval": "5s",
     "purgeInterval": "10m",
     "hashrateWindow": "30m",
     "hashrateLargeWindow": "3h",
-    "luckWindow": [80, 256, 1000],
-    "payments": 200,
-    "blocks": 200,
+    "luckWindow": [64, 256, 1000],
+    "payments": 150,
+    "blocks": 150,
     "poolCharts":"0 */10 * * * *",
     "poolChartsNum":100,
     "minerCharts":"0 */10 * * * *",
@@ -31,7 +31,7 @@
     },
     {
       "name": "backup",
-      "url": "http://127.0.0.2:4455",
+      "url": "http://127.0.0.1:4456",
       "timeout": "10s"
     }
   ],
@@ -39,7 +39,7 @@
   "redis": {
     "endpoint": "127.0.0.1:6379",
     "poolSize": 10,
-    "database": 3,
+    "database": 4,
     "password": ""
   }
 

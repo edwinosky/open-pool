@@ -144,18 +144,18 @@ miners:
 
 wallet:
   dapp_html: <a href=""></a>
-  online_html: <a href="https://www.myetherwallet.com/">https://www.myetherwallet.com//</a> Online wallet
+  online_html: <a href="https://wallet.hydnora.org/">https://wallet.hydnora.org/</a> Online wallet
 
 errors:
   header: Stats API Temporarily Down
   message: Usually it's just a temporal issue and mining is not affected.
 
 links:
-  blockExplorerLink: 'https://explorer.amoeba.pro/'
-  blockExplorerLink_tx: 'https://explorer.amoeba.pro/tx/'
-  blockExplorerLink_uncle: 'https://explorer.amoeba.pro/block/'
-  blockExplorerLink_block: 'https://explorer.amoeba.pro/block/'
-  blockExplorerLink_address: 'https://explorer.amoeba.pro/addr/'
+  blockExplorerLink: 'http://explorer.hydnora.org'
+  blockExplorerLink_tx: 'http://explorer.hydnora.org/tx/'
+  blockExplorerLink_uncle: 'http://explorer.hydnora.org/block/'
+  blockExplorerLink_block: 'http://explorer.hydnora.org/block/'
+  blockExplorerLink_address: 'http://explorer.hydnora.org/addr/'
 
 footer:
   copyrights: '&copy; Busting blocks for you <a href="https://masterpro.site" target="_blank"> Masterpro.site</a>'

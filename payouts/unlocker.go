@@ -31,7 +31,7 @@ type UnlockerConfig struct {
 
 const minDepth = 16
 
-var constReward = math.MustParseBig256("25000000000000000000")
+var constReward = math.MustParseBig256("26000000000000000000")
 var uncleReward = new(big.Int).Div(constReward, new(big.Int).SetInt64(32))
 var unclesReward = math.MustParseBig256("0000000000000000000")
 

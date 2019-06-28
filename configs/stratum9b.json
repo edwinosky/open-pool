@@ -1,17 +1,17 @@
 {
   "threads": 1,
-  "coin": "etfx",
+  "coin": "xero",
   "name": "main",
   "pplns": 1000,
   "proxy": {
     "enabled": true,
-    "listen": "etfx.masterpro.site:1719",
+    "listen": "0.0.0.0:1719",
     "limitHeadersSize": 1024,
     "limitBodySize": 256,
     "behindReverseProxy": false,
     "stratum": {
       "enabled": true,
-      "listen": "etfx.masterpro.site:1019",
+      "listen": "0.0.0.0:1019",
       "timeout": "120s",
       "maxConn": 8192
     },
@@ -55,7 +55,7 @@
     },
     {
       "name": "backup",
-      "url": "http://127.0.0.2:4455",
+      "url": "http://127.0.0.1:4456",
       "timeout": "10s"
     }
   ],
@@ -63,7 +63,7 @@
   "redis": {
     "endpoint": "127.0.0.1:6379",
     "poolSize": 10,
-    "database": 3,
+    "database": 4,
     "password": ""
   }
 
