@@ -8,8 +8,7 @@
       <div class="col-md-4">
         <strong>{{t "home.min_payout_threshold"}}: {{config.PayoutThreshold}} {{config.Unit}}</strong> / {{t "home.payouts_run" interval=config.PayoutInterval}}<br/>
         <span class="label label-success">PPLNS</span> {{t "home.payout_scheme_detail"}} <br/>
-        <span class="label label-success">USA East</span> New York City <br/>
-        <span class="label label-success">USA West</span> San Francisco <br/>
+        <span class="label label-success">USA</span> San Francisco <br/>
         <span class="label label-success">EUROPA</span> Amsterdam, Netherlands <br/>
         <span class="label label-success">ASIA</span> Singapore <br/>
       </div>
@@ -58,23 +57,7 @@
 <br>
 <div>
     <h4 class="note note-info text-left">
-     If you use windows system, you must use the following script in your .bat file<br>
-     <br>
-     <b>NVIDIA</b><br>
-     <br>
-     :start<br>
-     TIMEOUT 10<br>
-     TT-Miner.exe -A PROGPOWH -luck -P 0xXXXXX.rigName@hora.masterpro.site:3032<br>
-     goto start<br>
-     <br>
-     <b>AMD</b> <br>
-     <br>
-     :start<br>
-     TIMEOUT 10<br>
-     progminer.exe -P stratum1+tcp://YourWallet.YourWorker@hora.masterpro.site:3032<br>
-     goto start<br>
-     <br>
-     <a href="https://discord.gg/X3qEM2y" target="_blank">Discord</a>
+     
 
     </h4>
 </div>
@@ -90,10 +73,9 @@
           <br><br>
           <b>{{t "home.settings.stratum_mining"}}:</b>
           <br><br>
-          <code>stratum1+tcp://{{config.StratumHost}}:3032</code><br>
-	        <code>stratum1+tcp://eu.masterpro.site:3032</code><br>
-	        <code>stratum1+tcp://asia.masterpro.site:3032</code><br>
-                <code>stratum1+tcp://sf.masterpro.site:3032</code><br>
+          <code>stratum+tcp://{{config.StratumHost}}:1011</code><br>
+                <code>stratum+tcp://eu.masterpro.site:1011</code><br>
+                <code>stratum+tcp://asia.masterpro.site:1011</code><br>
            <code></code>
         </h5>
       </div>
@@ -105,10 +87,9 @@
           <br><br>
           <b>{{t "home.settings.stratum_mining"}}:</b>
           <br><br>
-          <code>stratum1+tcp://{{config.StratumHost}}:3034</code><br>
-	        <code>stratum1+tcp://eu.masterpro.site:3034</code><br>
-	        <code>stratum1+tcp://asia.masterpro.site:3034</code><br>
-                <code>stratum1+tcp://sf.masterpro.site:3034</code><br>
+          <code>stratum+tcp://{{config.StratumHost}}:1014</code><br>
+                <code>stratum+tcp://eu.masterpro.site:1014</code><br>
+                <code>stratum+tcp://asia.masterpro.site:1014</code><br>
           <code></code>
         </h5>
 
@@ -121,17 +102,16 @@
           <br><br>
           <b>{{t "home.settings.stratum_mining"}}:</b>
           <br><br>
-          <code>stratum1+tcp://{{config.StratumHost}}:3039</code><br>
-          <code>stratum1+tcp://eu.masterpro.site:3039</code><br>
-          <code>stratum1+tcp://asia.masterpro.site:3039</code><br>
-          <code>stratum1+tcp://sf.masterpro.site:3039</code><br>
+          <code>stratum1+tcp://{{config.StratumHost}}:1019</code><br>
+          <code>stratum1+tcp://eu.masterpro.site:1019</code><br>
+          <code>stratum1+tcp://asia.masterpro.site:1019</code><br>
           <code></code>
         </h5>
       </div>
     </div>
     <div>
     <h3 class="note note-info text-center">
-       TEthashOrigin Pool <a href="http://teo.masterpro.site" target="_blank">TEO Coin</a><br> <br>
+       Hydnora Pool <a href="https://hora.masterpro.site" target="_blank">Hydnora Coin</a><br> <br>
        
        For more information ask in <a href="https://discord.gg/tMZ4PVV" target="_blank">Discord</a>
        and <a href="https://t.me/HYDNORAen" target="_blank">Telegram</a>
@@ -160,7 +140,7 @@
               </div>
               <div id="win_collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                      <input type="text" class="form-control" value="progminer.exe -P stratum1+tcp://YourWallet.YourWorker@hora.masterpro.site:3032">
+                      <input type="text" class="form-control" value="EthDcrMiner64.exe -epool stratum+tcp://xero.masterpro.site:1012 -ewal &lt;address&gt; -eworker &lt;worker&gt; -allcoins 1 -allpools 1">
                 </div>
               </div>
             </div>
@@ -174,7 +154,7 @@
               </div>
               <div id="win_collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
-                 <input type="text" class="form-control" value="TT-Miner.exe -A PROGPOWH -luck -P YOUR_WALLET.YOUR_WORKER@hora.masterpro.site:3032">        
+                 <input type="text" class="form-control" value="EthDcrMiner64.exe -epool stratum+tcp://xero.masterpro.site:1012 -ewal &lt;address&gt; -eworker &lt;worker&gt; -allcoins 1 -allpools 1">        
                  
 
               </div>
@@ -197,7 +177,7 @@
               </div>
               <div id="smos_collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                      <input type="text" class="form-control" value="progminer.exe -P stratum1+tcp://YourWallet.YourWorker@hora.masterpro.site:3032">
+                      <input type="text" class="form-control" value="EthDcrMiner64 -epool stratum+tcp://xero.masterpro.site:1012 -ewal &lt;address&gt; -eworker &lt;worker&gt; -allcoins 1 -allpools 1">
                 </div>
               </div>
             </div>
@@ -211,7 +191,7 @@
               </div>
               <div id="smos_collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
-                      <input type="text" class="form-control" value="progminer.exe -P stratum1+tcp://YourWallet.YourWorker@hora.masterpro.site:3032">
+                      <input type="text" class="form-control" value="EthDcrMiner64 -epool stratum+tcp://xero.masterpro.site:1012 -ewal &lt;address&gt; -eworker &lt;worker&gt; -allcoins 1 -allpools 1">
                 </div>
               </div>
             </div>

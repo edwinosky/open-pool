@@ -144,18 +144,18 @@ miners:
 
 wallet:
   dapp_html: <a href=""></a>
-  online_html: <a href="https://wallet.hydnora.org/">https://wallet.hydnora.org/</a> Online wallet
+  online_html: <a href="https://wallet.xerom.org/">https://wallet.xerom.org/</a> Online wallet
 
 errors:
   header: Stats API Temporarily Down
   message: Usually it's just a temporal issue and mining is not affected.
 
 links:
-  blockExplorerLink: 'http://explorer.hydnora.org'
-  blockExplorerLink_tx: 'http://explorer.hydnora.org/tx/'
-  blockExplorerLink_uncle: 'http://explorer.hydnora.org/block/'
-  blockExplorerLink_block: 'http://explorer.hydnora.org/block/'
-  blockExplorerLink_address: 'http://explorer.hydnora.org/addr/'
+  blockExplorerLink: 'https://explorer.xerom.org/'
+  blockExplorerLink_tx: 'https://explorer.xerom.org/tx/'
+  blockExplorerLink_uncle: 'https://explorer.xerom.org/block/'
+  blockExplorerLink_block: 'https://explorer.xerom.org/block/'
+  blockExplorerLink_address: 'https://explorer.xerom.org/addr/'
 
 footer:
   copyrights: '&copy; Busting blocks for you <a href="https://masterpro.site" target="_blank"> Masterpro.site</a>'
