@@ -48,9 +48,9 @@ home:
     stratum_mining: Stratum Mining
     commands:
       windows: Windows
-      smos: SimpleMining
+      smos: HiveOS
       windows_instruction: Add this to your bat file
-      smos_instruction: Add this into your new Rig Group
+      smos_instruction: you must create a new wallet, after that you create a new flight sheet, and in custom miner you just have to place the link below
 
 account:
   immature:
@@ -144,18 +144,21 @@ miners:
 
 wallet:
   dapp_html: <a href=""></a>
-  online_html: <a href="https://wallet.xerom.org/">https://wallet.xerom.org/</a> Online wallet
+  online_html: <a href="https://wallet.hydnora.org/">https://wallet.hydnora.org/</a> Online wallet
 
 errors:
   header: Stats API Temporarily Down
   message: Usually it's just a temporal issue and mining is not affected.
 
 links:
-  blockExplorerLink: 'https://explorer.xerom.org/'
-  blockExplorerLink_tx: 'https://explorer.xerom.org/tx/'
-  blockExplorerLink_uncle: 'https://explorer.xerom.org/block/'
-  blockExplorerLink_block: 'https://explorer.xerom.org/block/'
-  blockExplorerLink_address: 'https://explorer.xerom.org/addr/'
+  blockExplorerLink: 'http://explorer.hydnora.org'
+  blockExplorerLink_tx: 'http://explorer.hydnora.org/tx/'
+  blockExplorerLink_uncle: 'http://explorer.hydnora.org/block/'
+  blockExplorerLink_block: 'http://explorer.hydnora.org/block/'
+  blockExplorerLink_address: 'http://explorer.hydnora.org/addr/'
 
 footer:
   copyrights: '&copy; Busting blocks for you <a href="https://masterpro.site" target="_blank"> Masterpro.site</a>'
+
+
+

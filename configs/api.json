@@ -16,8 +16,8 @@
     "blocks": 150,
     "poolCharts":"0 */10 * * * *",
     "poolChartsNum":100,
-    "minerCharts":"0 */10 * * * *",
-    "minerChartsNum":100,
+    "minerCharts":"0 */30 * * * *",
+    "minerChartsNum":330,
     "purgeOnly": false
   },
 

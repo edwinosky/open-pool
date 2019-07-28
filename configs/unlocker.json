@@ -1,6 +1,6 @@
 {
   "threads": 1,
-  "coin": "xero",
+  "coin": "hora",
   "name": "main",
   "pplns": 1000,
 
@@ -9,12 +9,12 @@
   "upstream": [
     {
       "name": "main",
-      "url": "http://127.0.0.1:4455",
+      "url": "http://127.0.0.1:8504",
       "timeout": "10s"
     },
     {
       "name": "backup",
-      "url": "http://127.0.0.1:4456",
+      "url": "http://127.0.0.1:8505",
       "timeout": "10s"
     }
   ],
@@ -22,20 +22,20 @@
   "redis": {
     "endpoint": "127.0.0.1:6379",
     "poolSize": 10,
-    "database": 4,
+    "database": 1,
     "password": ""
   },
 
   "unlocker": {
     "enabled": true,
-    "poolFee": 3,
-    "poolFeeAddress": "0x9dfc3b370d6b1c3e17cfe4aa21a99841d3b35efd",
+    "poolFee": 1,
+    "poolFeeAddress": "0xa4cab5fe0ca6b7ed470d3ae74fb71335bde41e3f",
     "donate": false,
     "depth": 32,
     "immatureDepth": 20,
     "keepTxFees": true,
-    "interval": "3m",
-    "daemon": "http://127.0.0.1:4455",
+    "interval": "6m",
+    "daemon": "http://127.0.0.1:8504",
     "timeout": "120s"
   }
 

@@ -15,26 +15,26 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: 'https://apixero.masterpro.site/',
-      PoolName: 'XERO Pool',
+      ApiUrl: 'https://apihora.masterpro.site/',
+      PoolName: 'HORA Pool',
       CompanyName: 'MasterPro.site',
       // HTTP mining endpoint
-      HttpHost: 'https://xero.masterpro.site',
-      HttpPort: 1822,
+      HttpHost: 'http://hora.masterpro.site',
+      HttpPort: 3832,
 
       // Stratum mining endpoint
       StratumHost: 'hora.masterpro.site',
-      StratumPort: 1812,
+      StratumPort: 3032,
 
       // Fee and payout details
-      PoolFee: '0.3%',
+      PoolFee: '1%',
       PayoutThreshold: '10',
       PayoutInterval: '2h',
 
       // For network hashrate (change for your favourite fork)
       BlockTime: 13.0,
-      BlockReward: 26,
-      Unit: 'XERO',
+      BlockReward: 8,
+      Unit: 'HORA',
 
     }
   };
