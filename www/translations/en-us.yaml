@@ -34,7 +34,7 @@ home:
   network_hashrate: Network Hash Rate
   blockchain_height: Blockchain Height
   current_round_variance: Current Round Variance
-  query_history: Your Stats and Payment History
+  query_history: Your Stats
   input:
     enter_your_wallet_address: Enter Your Wallet Address
   button:
@@ -147,8 +147,8 @@ wallet:
   online_html: <a href="https://wallet.hydnora.org/">https://wallet.hydnora.org/</a> Online wallet
 
 errors:
-  header: Stats API Temporarily Down
-  message: Usually it's just a temporal issue and mining is not affected.
+  header: Inactive Stats
+  message: Stratum ports work correctly.
 
 links:
   blockExplorerLink: 'http://explorer.hydnora.org'
