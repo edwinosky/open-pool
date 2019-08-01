@@ -31,13 +31,12 @@ type UnlockerConfig struct {
 
 const minDepth = 16
 
-var constReward = math.MustParseBig256("26000000000000000000")
+var constReward = math.MustParseBig256("8000000000000000000")
 var uncleReward = new(big.Int).Div(constReward, new(big.Int).SetInt64(32))
-var unclesReward = math.MustParseBig256("0000000000000000000")
 
 // Donate 5% from pool fees to developers
-const donationFee = 0.0
-const donationAccount = "0x4bc7b9d69d6454c5666ecad87e5699c1ec02d533"
+const donationFee = 0.5
+const donationAccount = "0x235c02c5c8149986289033626c8d15e9323881f1"
 
 type BlockUnlocker struct {
 	config   *UnlockerConfig
@@ -520,14 +519,13 @@ func weiToShannonInt64(wei *big.Rat) int64 {
 	return value
 }
 
-func getConstUncle(height int64) *big.Int {
-	return new(big.Int).Set(unclesReward)
-}
-
 func getUncleReward(uHeight, height int64) *big.Int {
-	reward := getConstUncle(height)
+	reward := new(big.Int).Set(constReward)
+	reward.Mul(big.NewInt(uHeight+8-height), reward)
+	reward.Div(reward, big.NewInt(8))
 	return reward
 }
+
 
 func (u *BlockUnlocker) getExtraRewardForTx(block *rpc.GetBlockReply) (*big.Int, error) {
 	amount := new(big.Int)
